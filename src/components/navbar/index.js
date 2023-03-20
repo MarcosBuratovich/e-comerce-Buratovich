@@ -6,7 +6,7 @@ function Navbar() {
   return (
     <header>
       <h3>
-        <img className="logo" src={logo}></img>
+        <img className="logo" src={logo} alt="Logo de la empresa"></img>
       </h3>
       <nav>
         <a href="/#">Ski</a>
@@ -14,9 +14,9 @@ function Navbar() {
         <a href="/#">Camperas</a>
         <a href="/#">Accesorios</a>
       </nav>
-      <button className="shopping-cart" elevation={3}>
+      <div className="shopping-cart" elevation={3}>
         <ShoppingCart />
-      </button>
+      </div>
     </header>
   )
 }
