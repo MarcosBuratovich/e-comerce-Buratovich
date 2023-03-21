@@ -2,13 +2,16 @@ import React from "react"
 import "./style.css"
 import IconButton from "@mui/material/IconButton"
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart"
+import Badge from "@mui/material/Badge"
 
-function ShoppingCart() {
+const IconoCarrito = ({ cantidad }) => {
   return (
-    <IconButton color="black" aria-label="add to shopping cart" size="large" variant="elevated">
-      <ShoppingCartIcon />
+    <IconButton>
+      <Badge badgeContent="1" color="primary">
+        <ShoppingCartIcon />
+      </Badge>
     </IconButton>
   )
 }
-
-export default ShoppingCart
+export default IconoCarrito
+//export default ShoppingCart

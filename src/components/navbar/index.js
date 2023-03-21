@@ -1,6 +1,6 @@
 import "./style.css"
-import ShoppingCart from "../shopping-cart"
 import logo from "../../extra/ski.png"
+import IconoCarrito from "../shopping-cart"
 
 function Navbar() {
   return (
@@ -15,7 +15,7 @@ function Navbar() {
         <a href="/#">Accesorios</a>
       </nav>
       <div className="shopping-cart" elevation={3}>
-        <ShoppingCart />
+        <IconoCarrito />
       </div>
     </header>
   )
