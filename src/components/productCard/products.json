@@ -1,0 +1,170 @@
+[
+  {
+    "id": 1,
+    "name": "Rossignol Experience 84 HD Skis",
+    "type": "Ski",
+    "price": 599.99,
+    "image": "https://images.evo.com/imgp/zoom/106058/460595/clone.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Volkl Mantra Skis",
+    "type": "Ski",
+    "price": 699.99,
+    "image": "https://images.evo.com/imgp/zoom/47704/262550/volkl-mantra-skis-2012-.jpg"
+  },
+  {
+    "id": 3,
+    "name": "K2 Mindbender 99 Ti Skis",
+    "type": "Ski",
+    "price": 799.99,
+    "image": "https://images.evo.com/imgp/zoom/221665/978072/k2-mindbender-99-ti-skis-2023-.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Burton Custom Snowboard",
+    "type": "Snowboard",
+    "price": 499.99,
+    "image": "https://images.evo.com/imgp/zoom/162043/657300/burton-custom-snowboard-2020-.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Lib Tech T.Rice Pro Snowboard",
+    "type": "Snowboard",
+    "price": 599.99,
+    "image": "https://images.evo.com/imgp/zoom/160918/638616/clone.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Never Summer Proto Type Two Snowboard",
+    "type": "Snowboard",
+    "price": 699.99,
+    "image": "https://images.evo.com/imgp/zoom/162898/647219/never-summer-proto-type-two-snowboard-2020-.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Atomic Vantage X 77 C Skis",
+    "type": "Ski",
+    "price": 499.99,
+    "image": "https://images.evo.com/imgp/700/121856/512339/clone.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Salomon QST 92 Skis",
+    "type": "Ski",
+    "price": 649.99,
+    "image": "https://images.evo.com/imgp/zoom/197274/812050/clone.jpg"
+  },
+  {
+    "id": 9,
+    "name": "Nordica Enforcer 100 Skis",
+    "type": "Ski",
+    "price": 899.99,
+    "image": "https://images.evo.com/imgp/zoom/224769/902350/clone.jpg"
+  },
+  {
+    "id": 10,
+    "name": "Jones Explorer Snowboard",
+    "type": "Snowboard",
+    "price": 449.99,
+    "image": "https://images.evo.com/imgp/zoom/138779/569376/clone.jpg"
+  },
+  {
+    "id": 11,
+    "name": "Arbor Westmark Camber Snowboard",
+    "type": "Snowboard",
+    "price": 549.99,
+    "image": "https://images.evo.com/imgp/zoom/200873/799111/clone.jpg"
+  },
+  {
+    "id": 12,
+    "name": "Capita Defenders of Awesome Snowboard",
+    "type": "Snowboard",
+    "price": 649.99,
+    "image": "https://images.evo.com/imgp/700/220013/979097/clone.jpg"
+  },
+  {
+    "id": 13,
+    "name": "Armada ARV 96 Skis",
+    "type": "Ski",
+    "price": 599.99,
+    "image": "https://images.evo.com/imgp/700/219353/918255/armada-arv-96-skis-2023-.jpg"
+  },
+  {
+    "id": 14,
+    "name": "Fischer Ranger 102 FR Skis",
+    "type": "Ski",
+    "price": 699.99,
+    "image": "https://images.evo.com/imgp/zoom/209031/846561/fischer-ranger-102-fr-skis-2022-.jpg"
+  },
+  {
+    "id": 15,
+    "name": "Line Vision 108 Skis",
+    "type": "Ski",
+    "price": 799.99,
+    "image": "https://images.evo.com/imgp/zoom/197207/792883/line-skis-vision-108-skis-2022-.jpg"
+  },
+  {
+    "id": 16,
+    "name": "Rome Artifact Snowboard",
+    "type": "Snowboard",
+    "price": 499.99,
+    "image": "https://images.evo.com/imgp/zoom/209214/836665/rome-artifact-snowboard-2022-.jpg"
+  },
+  {
+    "id": 17,
+    "name": "GNU Riders Choice Snowboard",
+    "type": "Snowboard",
+    "price": 599.99,
+    "image": "https://images.evo.com/imgp/zoom/220827/911104/gnu-riders-choice-asym-c2x-snowboard-2023-.jpg"
+  },
+  {
+    "id": 18,
+    "name": "Lib Tech Orca Snowboard",
+    "type": "Snowboard",
+    "price": 699.99,
+    "image": "https://images.evo.com/imgp/zoom/220788/979001/clone.jpg"
+  },
+  {
+    "id": 19,
+    "name": "Nordica Santa Ana 93 Skis",
+    "type": "Ski",
+    "price": 499.99,
+    "image": "https://images.evo.com/imgp/zoom/162254/637072/nordica-santa-ana-93-skis-women-s-2020-.jpg"
+  },
+  {
+    "id": 20,
+    "name": "K2 Mindbender 90 C Skis",
+    "type": "Ski",
+    "price": 649.99,
+    "image": "https://images.evo.com/imgp/zoom/182113/723836/clone.jpg"
+  },
+  {
+    "id": 21,
+    "name": "Atomic Vantage 97 C W Skis",
+    "type": "Ski",
+    "price": 899.99,
+    "image": "https://images.evo.com/imgp/zoom/163768/641646/clone.jpg"
+  },
+  {
+    "id": 22,
+    "name": "Arbor Annex Snowboard",
+    "type": "Snowboard",
+    "price": 449.99,
+    "image": "https://images.evo.com/imgp/zoom/180922/713641/arbor-annex-snowboard-2022-.jpg"
+  },
+  {
+    "id": 23,
+    "name": "Jones Mountain Twin Snowboard",
+    "type": "Snowboard",
+    "price": 549.99,
+    "image": "https://images.evo.com/imgp/zoom/69456/339410/clone.jpg"
+  },
+  {
+    "id": 24,
+    "name": "Burton Deep Thinker Snowboard",
+    "type": "Snowboard",
+    "price": 649.99,
+    "image": "https://images.evo.com/imgp/zoom/220271/935231/burton-deep-thinker-snowboard-2023-.jpg"
+  }
+]

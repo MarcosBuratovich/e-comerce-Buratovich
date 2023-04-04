@@ -14,4 +14,3 @@ const IconoCarrito = ({ cantidad }) => {
   )
 }
 export default IconoCarrito
-//export default ShoppingCart
