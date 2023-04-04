@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useMemo } from "react"
+import React, { useMemo } from "react"
 import { useParams } from "react-router-dom"
 import products from "../../components/productCard/products.json"
 import ProductList from "../../components/productList/ProductList"
