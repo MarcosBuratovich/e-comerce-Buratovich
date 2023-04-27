@@ -1,16 +1,51 @@
-import React, { useMemo } from "react"
+import React, { useEffect, useState } from "react"
 import { useParams } from "react-router-dom"
-import products from "../../components/productCard/products.json"
-import ProductList from "../../components/productList/ProductList"
+import { Card, CardContent, CardMedia, Typography, CardActions } from "@mui/material"
+import { collection, query, getDocs, where, documentId } from "firebase/firestore"
+import { itemjson } from "../../firebase/firebaseConfig"
 import "./ItemListDetail.css"
+import AddButton from "../../components/button/AddCart"
 
 const ItemListDetail = () => {
+  const [itemDetail, setItemDetail] = useState([])
+
   let { id } = useParams()
-  //const [product] = useState(products.find((p) => p.id === parseInt(id)))
 
-  const producto2 = useMemo(() => products.find((p) => p.id === parseInt(id)), [id])
+  useEffect(() => {
+    const itemDetail = async () => {
+      const q = query(collection(itemjson, "SkinSnowboard"), where(documentId(), "==", id))
+      const docs = []
+      const querySnapshot = await getDocs(q)
+      querySnapshot.forEach((doc) => {
+        docs.push({ ...doc.data(), id: doc.id })
+      })
+      setItemDetail(docs)
+    }
+    itemDetail()
+  }, [id])
 
-  return <div className="detailcard">{!producto2 ? <p>No tengo producto</p> : <ProductList key={producto2.id} data={producto2} />}</div>
+  return (
+    <Card className="itemcard">
+      {itemDetail.map((data) => {
+        return (
+          <div className="detailcard">
+            <CardMedia className="imgcard" component="img" height="auto" image={data.image} alt={data.name} />
+            <CardContent className="fullcard">
+              <Typography className="namecard" gutterBottom variant="h5" component="div">
+                {data.name}
+              </Typography>
+              <Typography className="pricecard" variant="body2" color="text.secondary">
+                {data.price}
+              </Typography>
+              <CardActions>
+                <AddButton key={data} data={data} />
+              </CardActions>
+            </CardContent>
+          </div>
+        )
+      })}
+    </Card>
+  )
 }
 
 export default ItemListDetail

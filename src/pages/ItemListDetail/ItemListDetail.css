@@ -1,5 +1,27 @@
-.detailcard {
+.itemcard {
+  margin-top: 2rem;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.fullcard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.namecard {
+  text-decoration: none;
+  justify-content: center;
+}
+
+.imgcard {
+  max-width: 600px;
+}
+
+.detailcard {
+  display: flex;
+  flex-direction: row;
 }

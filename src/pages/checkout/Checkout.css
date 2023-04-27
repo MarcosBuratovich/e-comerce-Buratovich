@@ -1,0 +1,16 @@
+.prodCart {
+  max-width: 20rem;
+}
+.containerCart {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  margin: 1rem;
+  display: flex;
+  justify-content: center;
+}
+.cartDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

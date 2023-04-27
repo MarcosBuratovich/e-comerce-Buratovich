@@ -9,7 +9,7 @@ import Toolbar from "@mui/material/Toolbar"
 import Button from "@mui/material/Button"
 import IconButton from "@mui/material/IconButton"
 
-export default function ResponsiveAppBar() {
+const ResponsiveAppBar = () => {
   return (
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="static" color="secondary">
@@ -33,3 +33,5 @@ export default function ResponsiveAppBar() {
     </Box>
   )
 }
+
+export default ResponsiveAppBar
