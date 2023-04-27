@@ -1,3 +1,5 @@
+// Esta logica la use para averiguar si hat productos repetidos dentro del array.
+// Asi cuando muestro el carrito no me genera varias veces el mismo producto a la vista.
 export const combinedItems = (arr = []) => {
   const res = arr.reduce((acc, obj) => {
     let found = false
