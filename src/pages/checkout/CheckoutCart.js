@@ -21,7 +21,7 @@ const Checkout = () => {
       </div>
       <Container className="containerCart">
         <h3>
-          Cantidad de productos seleccionados: <span className="danger">{cart.items}</span> TOTAL <span className="success">${cart.amount}</span>.
+          Cantidad de productos seleccionados: <span className="danger">{cart.items}</span> TOTAL <span className="success">${parseFloat(cart.amount).toFixed(2)}</span>.
         </h3>
         <br />
         <Button onClick={() => setCart(initialState)}>LIMPIAR EL CARRITO</Button>

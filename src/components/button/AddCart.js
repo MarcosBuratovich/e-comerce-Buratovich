@@ -11,6 +11,7 @@ const AddButton = ({ data }) => {
       newItem = {
         ...cart,
         amount: cart.amount + data.price,
+        items: cart.items + 1,
         list: [...cart.list, { ...data }],
       }
     } else {
