@@ -15,7 +15,7 @@ const styles = {
   },
 }
 
-const initialState = {
+const initialStates = {
   name: "",
   lastName: "",
   mail: "",
@@ -24,9 +24,8 @@ const initialState = {
 
 const Shop = () => {
   const { cart, initialState, setCart } = useCart()
-  const [values, setValues] = useState(initialState)
+  const [values, setValues] = useState(initialStates)
   const [purchaseID, setPurchaseID] = useState("")
-  console.log("paso por aca")
 
   const onChange = (e) => {
     const { value, name } = e.target
@@ -34,11 +33,9 @@ const Shop = () => {
   }
 
   const onSubmit = async (e) => {
-    console.log(cart)
     if (cart.items === 0) {
       console.log("No se hace la compra esta vacio")
-
-      setValues(initialState)
+      setValues(initialStates)
     } else {
       e.preventDefault()
       console.log(values)
@@ -47,7 +44,7 @@ const Shop = () => {
       })
 
       setPurchaseID(docRef.id)
-      setValues(initialState)
+      setValues(initialStates)
       setCart(initialState)
     }
   }
