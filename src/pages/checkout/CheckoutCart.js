@@ -1,11 +1,13 @@
 import { useCart } from "../../components/context/CartContext"
 import { combinedItems } from "../../components/utils/CombineList"
 import ProductList from "../../components/productList/ProductList"
-import { Container, Button } from "@mui/material"
+import { Container } from "@mui/material"
 import "./Checkout.css"
+import Modal from "../../components/modal/ModalCart"
+import Chip from "@mui/joy/Chip"
 
 const Checkout = () => {
-  const { cart, initialState, setCart } = useCart()
+  const { cart } = useCart()
 
   const checkoutList = combinedItems(cart.list)
 
@@ -16,6 +18,7 @@ const Checkout = () => {
         {checkoutList.map((data) => (
           <div className="prodCart">
             <ProductList key={data.id} data={data} isCheckout />
+            <Chip>{data.count}</Chip>
           </div>
         ))}
       </div>
@@ -24,7 +27,7 @@ const Checkout = () => {
           Cantidad de productos seleccionados: <span className="danger">{cart.items}</span> TOTAL <span className="success">${parseFloat(cart.amount).toFixed(2)}</span>.
         </h3>
         <br />
-        <Button onClick={() => setCart(initialState)}>LIMPIAR EL CARRITO</Button>
+        <Modal />
       </Container>
     </div>
   )

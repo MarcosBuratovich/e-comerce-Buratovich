@@ -38,7 +38,7 @@ const ItemListDetail = () => {
                 {data.price}
               </Typography>
               <CardActions>
-                <AddButton key={data} data={data} />
+                <AddButton key={data.id} data={data} />
               </CardActions>
             </CardContent>
           </div>
