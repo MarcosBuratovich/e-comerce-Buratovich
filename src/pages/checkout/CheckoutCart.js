@@ -1,6 +1,6 @@
 import { useCart } from "../../components/context/CartContext"
 import { combinedItems } from "../../components/utils/CombineList"
-import ProductList from "../../components/productList/ProductList"
+import ProductList from "../../components/productList/ProductListCheck"
 import "./Checkout.css"
 import Modal from "../../components/modal/ModalCart"
 import Chip from "@mui/joy/Chip"
