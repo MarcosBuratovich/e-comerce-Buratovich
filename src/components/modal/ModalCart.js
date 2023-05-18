@@ -9,7 +9,7 @@ export default function BasicModalDialog() {
   const [open, setOpen] = React.useState(false)
   return (
     <React.Fragment>
-      <Button variant="outlined" color="neutral" onClick={() => setOpen(true)}>
+      <Button variant="outlined" color="primary" onClick={() => setOpen(true)}>
         Finalizar Compra
       </Button>
       <Modal open={open} onClose={() => setOpen(false)}>

@@ -9,19 +9,17 @@ import { CartProvider } from "./components/context/CartContext"
 
 function App() {
   return (
-    <body>
-      <CartProvider>
-        <BrowserRouter>
-          <ResponsiveAppBar />
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/detail/:id" element={<ItemListDetail />} />
-            <Route path="/category/:type" element={<ItemListCategory />} />
-            <Route path="/checkout" element={<Checkout />} />
-          </Routes>
-        </BrowserRouter>
-      </CartProvider>
-    </body>
+    <CartProvider>
+      <BrowserRouter>
+        <ResponsiveAppBar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/detail/:id" element={<ItemListDetail />} />
+          <Route path="/category/:type" element={<ItemListCategory />} />
+          <Route path="/checkout" element={<Checkout />} />
+        </Routes>
+      </BrowserRouter>
+    </CartProvider>
   )
 }
 

@@ -1,10 +1,10 @@
 import { useCart } from "../../components/context/CartContext"
 import { combinedItems } from "../../components/utils/CombineList"
 import ProductList from "../../components/productList/ProductList"
-import { Container } from "@mui/material"
 import "./Checkout.css"
 import Modal from "../../components/modal/ModalCart"
 import Chip from "@mui/joy/Chip"
+import ElimButton from "../../components/button/ElimCart"
 
 const Checkout = () => {
   const { cart } = useCart()
@@ -22,13 +22,15 @@ const Checkout = () => {
           </div>
         ))}
       </div>
-      <Container className="containerCart">
+      <div className="containerCart">
         <h3>
           Cantidad de productos seleccionados: <span className="danger">{cart.items}</span> TOTAL <span className="success">${parseFloat(cart.amount).toFixed(2)}</span>.
         </h3>
-        <br />
+      </div>
+      <div className="containerCart">
+        <ElimButton />
         <Modal />
-      </Container>
+      </div>
     </div>
   )
 }
